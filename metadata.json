@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "organization": "cwsbr",
+  "date": "July 2026",
+  "abstract": "Codex skill for preparing manual App Store Connect listing packages. Generates metadata drafts, brand assets, icon and screenshot export targets, reviewer notes, privacy/compliance questions, and pre-submission risk notes without uploading to App Store Connect.",
+  "references": [
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+    "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots/",
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information/",
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/app-information",
+    "https://developer.apple.com/app-store/review/guidelines/"
+  ]
+}

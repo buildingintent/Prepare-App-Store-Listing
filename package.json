@@ -1,0 +1,19 @@
+{
+  "name": "prepare-app-store-listing-skill",
+  "version": "0.1.0",
+  "description": "Install the prepare-app-store-listing Codex skill.",
+  "license": "MIT",
+  "bin": {
+    "prepare-app-store-listing-skill": "bin/install.mjs"
+  },
+  "files": [
+    "skills",
+    "bin",
+    ".codex-plugin",
+    ".agents",
+    "metadata.json"
+  ],
+  "scripts": {
+    "test": "python3 skills/prepare-app-store-listing/scripts/asc_assets.py self-test"
+  }
+}

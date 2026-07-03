@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare App Store Listing"
+  short_description: "Generate App Store listing assets"
+  default_prompt: "/store:prepare with $prepare-app-store-listing"

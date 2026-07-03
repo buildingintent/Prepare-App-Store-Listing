@@ -1,0 +1,40 @@
+{
+  "name": "prepare-app-store-listing",
+  "version": "0.1.0",
+  "description": "Generate manual App Store Connect listing packages with metadata, branding, screenshots, and pre-submission checks.",
+  "author": {
+    "name": "cwsbr",
+    "url": "https://github.com/cwsbr"
+  },
+  "homepage": "https://github.com/cwsbr/prepare-app-store-listing",
+  "repository": "https://github.com/cwsbr/prepare-app-store-listing",
+  "license": "MIT",
+  "keywords": [
+    "app-store",
+    "app-store-connect",
+    "ios",
+    "metadata",
+    "screenshots",
+    "codex",
+    "skills"
+  ],
+  "skills": "skills",
+  "interface": {
+    "displayName": "Prepare App Store Listing",
+    "shortDescription": "Generate App Store listing packages",
+    "longDescription": "Analyze an app repository and prepare manual App Store Connect metadata, branding, screenshots, review notes, privacy questions, and validation reports.",
+    "developerName": "cwsbr",
+    "category": "Coding",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/cwsbr/prepare-app-store-listing",
+    "defaultPrompt": [
+      "/store:prepare",
+      "/store:copy",
+      "/store:validate"
+    ],
+    "brandColor": "#0A84FF"
+  }
+}
