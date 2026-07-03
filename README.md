@@ -10,12 +10,6 @@ From GitHub with the open skills CLI:
 npx skills add buildingintent/Prepare-App-Store-Listing --skill prepare-app-store-listing -g -a codex -y
 ```
 
-After publishing to npm:
-
-```bash
-npx prepare-app-store-listing-skill
-```
-
 Restart Codex, then run:
 
 ```text
