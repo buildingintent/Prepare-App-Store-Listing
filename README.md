@@ -7,7 +7,7 @@ Codex skill for preparing manual App Store Connect listing packages. It creates 
 From GitHub with the open skills CLI:
 
 ```bash
-npx skills add OWNER/REPO --skill prepare-app-store-listing -g -a codex -y
+npx skills add buildingintent/Prepare-App-Store-Listing --skill prepare-app-store-listing -g -a codex -y
 ```
 
 After publishing to npm:
