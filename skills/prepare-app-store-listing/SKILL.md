@@ -12,7 +12,7 @@ Treat these as user prompt aliases:
 - `/store:prepare`: run the full workflow for the current repository.
 - `/store:copy`: generate or refresh only App Store text fields and reviewer/privacy notes.
 - `/store:assets`: generate or refresh only brand assets, icon source art, and screenshot export targets.
-- `/store:icon`: generate or resize only `brand/app-icon-1024.png`.
+- `/store:icon`: generate or resize only a simple production-style illustrated `brand/app-icon-1024.png`.
 - `/store:shots`: prepare screenshot folders, screenshot plan, and resized screenshots from provided captures.
 - `/store:review`: create or refresh `pre-submission-risk.md` with likely App Review blockers.
 - `/store:validate`: run `asc_assets.py validate` and fix package issues when source files are available.
@@ -39,6 +39,22 @@ Create a manual App Store Connect submission package in `app-store-listing/`. Do
 - Do not rely on image generation for exact App Store dimensions. Generate larger source images, then resize/crop with `asc_assets.py`.
 - App screenshots should show the real app experience. Generated screenshots are drafts unless derived from actual app captures.
 - Use plain PNG/JPG outputs. Flatten alpha for App Store icon exports.
+
+## Icon Style
+
+For generated app icons, default to a simple production app style:
+
+- Use one clear central metaphor derived from the app's actual purpose.
+- Prefer flat or lightly layered illustration, clean geometry, and 1-2 brand colors only.
+- Use one background color and one foreground color when possible; keep the silhouette readable at small sizes.
+- Avoid AI-looking detail: no glossy 3D, glassmorphism, lens flares, busy textures, fake depth, photorealism, mascots, tiny UI screenshots, text, or letters unless the existing brand already uses them.
+- Generate `brand/logo-source.png` first, then export `brand/app-icon-1024.png` with `asc_assets.py resize`.
+
+Prompt pattern:
+
+```text
+Simple production iOS app icon, flat vector-style illustration, [one app-specific metaphor], clean geometric shapes, 1-2 brand colors only, one background color and one foreground color, centered composition, readable at small size, no text, no letters, no 3D, no gloss, no photorealism.
+```
 
 ## Script
 
